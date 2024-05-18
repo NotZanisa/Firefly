@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Wife, Firefly</title>
+    <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('Stories.ttf') format('truetype');
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            background-image: linear-gradient(to bottom right, #58db74, #3a9c8f);
+            font-family: 'CustomFont', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            font-size: 48px;
+            margin-top: 20px;
+        }
+
+        .desc {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .desc img {
+            margin-left: 30px; /* Changed from margin-right to margin-left */
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            animation: pulse 2s infinite alternate;
+            animation: pulse 2s infinite alternate;
+            float: right; /* Changed from left to right */
+            shape-outside: circle();
+            margin-top: -30px;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        .desc div {
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        .desc p {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .desc ol {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .desc li {
+            margin-bottom: 5px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .desc li:before {
+            content: "🎶";
+            left: 0;
+        }
+
+        .under-desc {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .robin{
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .robin:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Robin is love <br> Robin is life</h1>
+
+    <section class="desc">
+        <div class="text-container">
+            <p><strong>Why Robin is wife</strong></p>
+            <ol>
+                <li> Beautiful</li>
+                <li> Majestic AF</li>
+                <li> Angelic Voice</li>
+                <li> Such a 'fly' body</li>
+            </ol>
+        </div>
+        <div class="image-container">
+            <a href="https://youtu.be/ysnVmGTBHWs?si=VluJMf6ngBxOOTl_">
+                <img src="robin.jpg" width="300" class="robin">
+            </a>
+        </div>
+    </section>
+
+    <section class="under-desc">
+        <p>VA: Alice Himora</p>
+        <p>Vocals: Chevy</p>
+    </section>
+
+    <audio id="fireflyAudio" src="firefly leitmotif.mp3" autoplay loop></audio>
+
+    <script>
+        var audio = document.getElementById("fireflyAudio");
+        audio.volume = 0.5;
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.querySelector('audio');
+            audio.currentTime = 155;
+        });
+    </script>
+</body>
+</html>

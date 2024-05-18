@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wives</title>
+    <style>        
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('Stand Alone.ttf') format('truetype');
+        }
+        body {
+            background-color: bisque;
+            font-family: 'CustomFont', sans-serif;
+        }
+        img {
+            width: 200px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 20px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            pointer-events: none;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 100px;
+            margin-top: 50px;
+        }
+        section {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Many Semi-3D Wives</h1>
+    </header>
+    <main>
+        <div class="container">
+            <section class="Firefly">
+                <a href="firefly.html">
+                    <img src="firefly link.jpg" alt="firefly" class="firefly">
+                </a>
+                <h1>Firefly</h1>
+            </section>
+
+            <section class="Robin">
+                <a href="robin.html">
+                    <img src="robin link.jpg" alt="robin" class="robin">
+                </a>
+                <h1>Robin</h1>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
