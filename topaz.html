@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Third Wife, Topaz</title>
+    <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('Stories.ttf') format('truetype');
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            background-image: linear-gradient(to bottom right, #58db74, #3a9c8f);
+            font-family: 'CustomFont', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            font-size: 48px;
+            margin-top: 20px;
+        }
+
+        .desc {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .desc img {
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            animation: pulse 2s infinite alternate;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .desc img:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        .desc div {
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        .desc p {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .desc ol {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .desc li {
+            margin-bottom: 5px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .desc li:before {
+            content: "🔥";
+            left: 0;
+        }
+
+        .under-desc {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .styled-button {
+            background-color: #4CAF50;
+            border: 2px solid #358138;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .styled-button:hover {
+            background-color: #45a049;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Topaz is love <br> Topaz is life</h1>
+
+    <section class="desc">
+        <a href="https://youtu.be/Hi77GMsHDhw?si=IppQyTuV0BeCKs4G">
+            <img src="topaz.jpg" width="300" class="topaz" id="topazImage">
+        </a>
+        <div class="text-container">
+            <p><strong>Why Topaz is wife</strong></p>
+            <ol>
+                <li>Got that TopASS</li>
+                <li>Smug asf</li>
+                <li>She can collect my love</li>
+                <li>FUA? Why don't you follow me to bed</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="under-desc">
+        <p>VA: Sam Blade</p>
+    </section>
+
+    <section class="back-button">
+        <button class="styled-button" onclick="window.history.back();">Back</button>
+    </section>
+
+    <audio id="topazAudio" src="topaz theme.mp3" autoplay loop></audio>
+
+    <script>
+        var audio = document.getElementById("topazAudio");
+        audio.volume = 0.5;
+    </script>
+</body>
+</html>
